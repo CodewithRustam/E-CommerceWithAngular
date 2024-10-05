@@ -1,0 +1,146 @@
+<div style="margin-top:110px" class="container-fluid mb-4">
+  <div class="row justify-content-center" >
+    <div class="col-4">
+      <div class="d-flex justify-content-between">
+        <h4>Shipping Address</h4>
+        <!-- Button to add a new address -->
+        <button (click)="toggleAddressForm()" class="btn btn-outline-primary mb-3">
+          {{ showAddressForm ? 'Cancel' : 'Add New Address' }}
+        </button>
+      </div>
+
+      <form [formGroup]="addressSelectionForm" (ngSubmit)="onSelectAddress()" *ngIf="!showAddressForm">
+        <div *ngFor="let address of addresses" class="card p-3 mb-2">
+          <input type="radio"
+                 formControlName="selectedAddress"
+                 [value]="address.id"
+                 id="address{{ address.id }}"
+                 class="form-check-input" />
+          <label [for]="'address' + address.id">
+            <span class="h4">{{ address.name }}</span><br />
+            <span>{{ address.street }}, {{ address.apartment }}</span><br />
+            <span>City: {{ address.city }}, State: {{ address.state }}, Zip: {{ address.zip }}</span><br />
+            <span>Mobile: {{ address.mobile }}</span>
+          </label>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Select Address</button>
+        </div>
+      </form>
+
+      <div class="card p-3" *ngIf="showAddressForm">
+        <form [formGroup]="newAddressForm" (ngSubmit)="onSaveAddress()">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" formControlName="name" class="form-control" id="inputName" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputMobile" class="form-label">Mobile</label>
+              <input type="text" formControlName="mobile" class="form-control" id="inputMobile" />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" formControlName="street" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" formControlName="apartment" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+            </div>
+            <div class="col-md-3">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" formControlName="zip" class="form-control" id="inputZip" />
+            </div>
+            <div class="col-md-5">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" formControlName="city" class="form-control" id="inputCity" />
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <input type="text" formControlName="state" class="form-control" id="inputState" />
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Save Address</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <div class="col-5 border-start  border-2">
+      <h4>Payment</h4>
+      <ul class="nav nav-tabs" id="paymentTabs">
+        <li class="nav-item">
+          <a class="nav-link"
+             [ngClass]="{'active': selectedTab === 'creditCard'}"
+             (click)="selectTab('creditCard')" style="cursor:pointer">Credit/Debit Card</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             [ngClass]="{'active': selectedTab === 'paypal'}"
+             (click)="selectTab('paypal')"  style="cursor:pointer">Upi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             [ngClass]="{'active': selectedTab === 'cashOnDelivery'}"
+             (click)="selectTab('cashOnDelivery')"  style="cursor:pointer">Cash on Delivery</a>
+        </li>
+      </ul>
+
+
+      <div class="tab-content mt-3">
+        <!-- Credit/Debit Card Tab -->
+        <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'creditCard'}" id="creditCard">
+          <h5>Credit/Debit Card Payment</h5>
+          <form (ngSubmit)="onSubmitCardPayment()" [formGroup]="creditCardForm">
+            <div class="mb-3">
+              <label for="cardName" class="form-label">Cardholder Name</label>
+              <input type="text" formControlName="cardName" class="form-control" id="cardName" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="cardNumber" class="form-label">Card Number</label>
+              <input type="text" formControlName="cardNumber" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="expiryDate" class="form-label">Expiry Date</label>
+                <input type="text" formControlName="expiryDate" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+              </div>
+              <div class="col-md-6">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" formControlName="cvv" class="form-control" id="cvv" placeholder="123" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!isAddressSelected">Pay Now</button>
+          </form>
+        </div>
+
+        <!-- PayPal Tab -->
+        <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'paypal'}" id="paypal">
+          <h5>PayPal Payment</h5>
+          <p>Please click the button below to pay through PayPal.</p>
+          <button class="btn btn-primary" (click)="onPayPalPayment()" [disabled]="!isAddressSelected">Pay with Upi</button>
+        </div>
+
+        <!-- Cash on Delivery Tab -->
+        <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'cashOnDelivery'}" id="cashOnDelivery">
+          <h5>Cash on Delivery</h5>
+          <p>You can pay in cash when the product is delivered.</p>
+          <form (ngSubmit)="onSubmitCashPayment()" [formGroup]="cashOnDeliveryForm">
+            <div class="mb-3">
+              <label for="receiverName" class="form-label">Receiver Name</label>
+              <input type="text" formControlName="receiverName" class="form-control" id="receiverName" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="receiverMobile" class="form-label">Receiver Mobile</label>
+              <input type="text" formControlName="receiverMobile" class="form-control" id="receiverMobile" placeholder="123-456-7890" required>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

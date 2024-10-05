@@ -1,0 +1,60 @@
+<div class="shopping-cart-container" style="margin-top: 80px">
+
+  <div class="cart-items-section">
+    <h3>Shopping Cart</h3>
+    <hr />
+
+    <!-- Check if there are no items in the cart -->
+    <div *ngIf="cartItemsData && cartItemsData.length === 0" class="empty-cart-message text-center">
+      <h5>Your cart is empty!</h5>
+      <p>Add items to your cart to proceed with the purchase.</p>
+      <a routerLink="/" class="btn btn-info">Go to Home</a>
+    </div>
+
+    <!-- Display cart items -->
+    <div class="cart-item" *ngFor="let item of cartItemsData">
+      <img [src]="item.imageUrl[0]" alt="Product Image" class="product-image" />
+      <div class="product-details">
+        <div class="product-title-container">
+          <h5 class="product-title">{{item.name}}</h5>
+          <i class="bi bi-trash3-fill text-danger h3 ms-2" style="cursor:pointer" (click)="removeFromCart(item)"></i>
+        </div>
+        <p class="product-subtext">100+ bought in past month</p>
+        <p class="product-stock-status"
+           [ngClass]="{'in-stock': item.stockQuantity > 0, 'out-of-stock': item.stockQuantity <= 0}">
+          {{ item.stockQuantity > 0 ? 'In Stock' : 'Out of Stock' }}
+        </p>
+        <p class="product-fulfilled">
+          <span class="fulfilled-icon">✅</span> Fulfilled
+        </p>
+        <div class="product-options">
+          <span class="me-2">Size: M</span>
+          <span>Color: Blue</span>
+        </div>
+        <div class="product-quantity">
+          Qty:<span class="ms-2">{{item.productQuantity}}</span>
+        </div>
+        <div class="product-price">
+          <span class="discounted-price">{{item.price *item.productQuantity | currency:'INR':'symbol'}}</span>
+          <span class="original-price">₹1,999.00</span>
+          <span class="discount-percentage">50% off</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtotal Section -->
+    <div class="text-end fs-5" *ngIf="cartItemsData && getTotalItems() > 0">
+      <span>Subtotal ({{getTotalItems()}}):</span>
+      <span class="fw-bold ms-2">{{ getTotalPrice() | currency:'INR':'symbol' }}</span>
+    </div>
+  </div>
+
+  <!-- Right Section: Price Summary -->
+  <div class="price-summary-section ms-3" *ngIf="cartItemsData && cartItemsData.length > 0">
+    <div class="summary-card">
+      <p class="summary-free-delivery">Your order is eligible for FREE Delivery</p>
+      <p class="summary-subtotal">Subtotal ({{getTotalItems()}} items): <strong>{{ getTotalPrice() | currency:'INR':'symbol' }}</strong></p>
+      <button class="proceed-to-buy-button" (click)="onProceedToBuy()">Proceed to Buy</button>
+    </div>
+  </div>
+</div>

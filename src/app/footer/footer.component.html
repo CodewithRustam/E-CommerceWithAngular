@@ -1,0 +1,40 @@
+<!-- footer.component.html -->
+<footer class="bg-primary text-light py-4">
+  <div class="container">
+    <div class="text-center mb-3">
+        <i (click)="scrollToTop()" class="bi bi-chevron-up h3"></i>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac augue nunc. Donec mollis risus vel massa bibendum, sed bibendum sapien hendrerit.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a class="text-light" routerLink="/">Home</a></li>
+          <li><a class="text-light" routerLink="/products">Products</a></li>
+          <li><a class="text-light" routerLink="/about">About Us</a></li>
+          <li><a class="text-light" routerLink="/contact">Contact</a></li>
+          <li><a class="text-light" routerLink="/privacy-policy">Privacy Policy</a></li>
+          <li><a class="text-light" routerLink="/terms-of-service">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <p>Email: support&#64;example.com</p>
+        <p>Phone: +1 (555) 555-5555</p>
+        <div class="social-icons">
+          <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <p>&copy; {{ currentYear }} E-Commerce. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,138 @@
+.shopping-cart-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.cart-items-section {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+.product-image {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.product-subtext, .product-stock-status, .product-fulfilled, .product-options, .product-quantity {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.fulfilled-icon {
+  color: green;
+  font-weight: bold;
+}
+
+.product-price {
+  margin-top: 10px;
+}
+
+.discounted-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b12704;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #767676;
+  margin-left: 10px;
+}
+
+.discount-percentage {
+  color: #b12704;
+  margin-left: 10px;
+}
+
+.price-summary-section {
+  flex: 25%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  height:100%
+}
+
+.summary-card {
+  text-align: center;
+}
+
+.summary-free-delivery {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.summary-subtotal {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.proceed-to-buy-button {
+  background-color: #ffc41c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 83%
+}
+
+  .proceed-to-buy-button:hover {
+    background-color: #f79807;
+  }
+
+.emi-info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #565959;
+}
+.in-stock {
+  color: green;
+  font-weight:bold
+}
+
+.out-of-stock {
+  color: red;
+  font-weight: bold
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligns items vertically */
+  margin-bottom: 15px; /* Space between cart items */
+  border-bottom: 1px solid gray;
+}
+
+.product-details {
+  flex-grow: 1; /* Allows this section to take up available space */
+  padding-right: 15px; /* Space between details and delete icon */
+}
+
+.product-title-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Space between title and delete icon */
+}
+
+.product-title {
+  margin: 0; /* Remove default margin */
+  flex-grow: 1; /* Allow the title to take up available space */
+}
+.empty-cart-message {
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+}
+
+

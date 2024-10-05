@@ -1,0 +1,2 @@
+D:\PracticeProgram\E-Commerce_Project\e-commerce_project.client\obj\Debug\e-commerce_project.client.esproj.CoreCompileInputs.cache
+C:\Users\rusta\Downloads\E-Commerce_Project\e-commerce_project.client\obj\Debug\e-commerce_project.client.esproj.CoreCompileInputs.cache

@@ -1,0 +1,269 @@
+{
+  "seller": [
+    {
+      "id": "c021",
+      "firstName": "Md ",
+      "lastName": "Rustam",
+      "email": "rustam@in.com",
+      "password": "password"
+    }
+  ],
+  "products": [
+    {
+      "id": "f615",
+      "name": "SOJANYA (Since 1958, Men's Pure Cotton Grey designer ONLY Long Kurta",
+      "category": "Clothes",
+      "price": "1485",
+      "stockQuantity": "6",
+      "description": "SOJANYA as a brand brings you quality and affordability. In market since 1958, we take pride in our commitment to maintain quality standards in each piece manufactured by us. Rock the fashion world as you adorn this kurta with embroidery from the house of SOJANYA. Made from 100% Cotton, it would lend you a glamorous look that is just perfect for any party. Dress to kill as you adorn this kurta with embroidery on the next gala.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/61jn-QcyuhL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/61Tjy0NM0vL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/61loKi9PzqL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/61loKi9PzqL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/7193v-j9FSL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71FrXgXxW-L._SX679_.jpg"
+      ]
+    },
+    {
+      "id": "7cda",
+      "name": "SOJANYA (Since 1958 Men's Cotton Contrast Embroidered Sequinned Long Kurta",
+      "category": "Clothes",
+      "price": "1598",
+      "stockQuantity": "4",
+      "description": "SOJANYA as a brand brings you quality and affordability. In market since 1958, we take pride in our commitment to maintain quality standards in each piece manufactured by us. Rock the fashion world as you adorn this Pure Cotton Embroidered Kurta from the house of SOJANYA. This is made from Pure Cotton (100% Cotton). Adorn a glamorous look that is just perfect for any party.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/61-UTFGL-qL._SY741_.jpg",
+        "https://m.media-amazon.com/images/I/61f8UwgxkbL._SY741_.jpg",
+        "https://m.media-amazon.com/images/I/61jEphnI9xL._SY741_.jpg",
+        "https://m.media-amazon.com/images/I/61jEphnI9xL._SY741_.jpg",
+        "https://m.media-amazon.com/images/I/81iGtgG74mL._SY741_.jpg",
+        "https://m.media-amazon.com/images/I/71kmFcco5tL._SY741_.jpg",
+        "https://m.media-amazon.com/images/I/71rozGkoo7L._SY741_.jpg"
+      ]
+    },
+    {
+      "id": "aa2c",
+      "name": "Allen Solly Men's Solid Regular Fit Polo",
+      "category": "Clothes",
+      "price": "609",
+      "stockQuantity": "4",
+      "description": "Allen Solly Mens T shirt\n\n",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/81RcNGzlIhL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/81B37q40bTL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/A15RmPu+MDL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/A15RmPu+MDL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/91dy790l-0L._SX569_.jpg"
+      ]
+    },
+    {
+      "name": "Haier 190L 4-Star Direct Cool Single Door Refrigerator (HED-204DS-P, Dazzle Steel, 2024 Model)",
+      "category": "Electronics",
+      "price": "14990",
+      "stockQuantity": "4",
+      "description": "irect Cool Refrigerator: Stylish Single Door Refrigerator with Modern Dazzle Steel. Enjoy powerful cooling that can last longer.\nCapacity 190 Litres: Suitable for families with 2 to 3 members or bachelors | Freezer capacity: 14 Ltr , Fresh food capacity: 176 Ltr\nEnergy Rating: 4 Stars - Energy Efficiency",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/51fBESl4S1L._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/61RabrAs0iL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71g9g+8CYlL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71g9g+8CYlL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71zoHNWQ1mL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71zoHNWQ1mL._SX679_.jpg"
+      ],
+      "id": "210e"
+    },
+    {
+      "id": "8c56",
+      "name": "Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE PRM 2S WINE BLOOM-Z, 2023 Model)",
+      "category": "Electronics",
+      "price": "13990",
+      "stockQuantity": "3",
+      "description": "ingle door refrigerator with Intellisense Inverter Technology\nCapacity: 184 liters for families with 2-3 members\nEnergy Rating - 2 Star energy efficiency\n1 year product warranty and 10 year compressor warranty\nIntellisense Inverter technology - Comes with low starting voltage of 95V & assures 25 years of compressor reliability- certified by VDE Germany *As Certified by VDE Germany",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/5134E0Z7iwL._SY679_.jpg",
+        "https://m.media-amazon.com/images/I/71FPgavKBHL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71awxm6H2wL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71XSo-WnBuL._SX679_.jpg",
+        "https://m.media-amazon.com/images/I/61-Cj3XyymL._SX679_.jpg"
+      ]
+    },
+    {
+      "id": "33a0",
+      "name": "OnePlus Nord CE4 Lite 5G (Super Silver, 8GB RAM, 128GB Storage)",
+      "category": "Electronics",
+      "price": "19998",
+      "stockQuantity": "3",
+      "description": "5500 mAh Battery & Reverse Charging: Ditch the power bank and press play all day with Nord CE4 Lite’s gigantic 5,500 mAh battery. You’ll even have enough juice to charge up your buddy’s phone with reverse wired charging\n80W SUPERVOOC Fast Charging: Add excitement to your day with 80W SUPERVOOC fast charging, which fully replenishes the hefty battery in just 20 minutes, ensuring a day's worth of power in no time.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/61Io5-ojWUL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/71QGsBvLd7L._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/51rzPGs8tEL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/51h7SRLgrGL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/51Y-8Iwvx2L._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/51Y-8Iwvx2L._SX569_.jpg"
+      ]
+    },
+    {
+      "id": "c95d",
+      "name": "Redmi Note 13 pro 5g Scarlet red 8gb 256gb",
+      "category": "Electronics",
+      "price": "23679",
+      "stockQuantity": "4",
+      "description": "isplay: 6.67 Inches; 120 Hz AMOLED 1.5K Display with Corning Gorilla Glass Victus; Resolution: 2712 x 1220 Pixels; Dolby Vision, 68.7billion colors, 1800nits Peak Brightness Processor:- Snapdragon 7s Gen 2 Mobile Platform - Octa-core Processor (Based on 4nm Architecture) ; Up to 2.4 GHz; Camera: 200MP Main Camera with Samsung ISOCELL HP3 sensor (OIS + EIS supported), 8MP Ultrawide and 2MP Macro | 16MP Front (Selfie) Camera; 7P lens Battery & Charging: 67W TurboCharge Fast-charge",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/71r41+TT2UL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/71r41+TT2UL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/71r41+TT2UL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/71r41+TT2UL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/71FmC-JJqGL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/71s3wq9NkgL._SX569_.jpg"
+      ]
+    },
+    {
+      "name": "boAt Rockerz 450 Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes(Aqua Blue)",
+      "category": "Electronics",
+      "price": "1498",
+      "stockQuantity": "3",
+      "description": "Playback- It provides a massive battery backup of upto 15 hours for a superior playback time.\nDrivers- Its 40mm dynamic drivers help pump out immersive HD audio all day long. Charging Time 3 hours\nEarcushions- It has been ergonomically designed and structured as an on-ear headphone to provide the best user experience with its comfortable padded earcushions and lightweight design\nControls- You can control your music without hiccups using the easy access controls, communicate seamlessly using the built-in mic, access voice assistant and always stay in the zone\nDual Modes- One can connect to boAt Rockerz 450 via not one but two modes, Bluetooth as well as AUX\n1 year warranty from the date of purchase",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/61u1VALn6JL._SX425_.jpg",
+        "https://m.media-amazon.com/images/I/61wHlexMEUL._SX425_.jpg",
+        "https://m.media-amazon.com/images/I/71rtP9TUGdL._SX425_.jpg",
+        "https://m.media-amazon.com/images/I/71uZcrr+bjL._SX425_.jpg"
+      ],
+      "id": "cc9f"
+    },
+    {
+      "id": "bc04",
+      "name": "HP Pavilion Plus, 13th Gen Intel Core i5-1335U, 14-inch, WUXGA, 16GB LPDDR5x, 512GB SSD, Intel Iris Xe Graphics, 5MP IR Camera/w Privacy Shutter, Backlit KB (Win 11, Blue, 1.38 kg) ew0115TU",
+      "category": "Electronics`",
+      "price": "72020",
+      "stockQuantity": "2",
+      "description": "【10-core 13th Gen Intel Core i5-1335U】Unlock powerful performance with a 10-core processor with 12 threads and a 12MB L3 cache, delivering faster and smoother multitasking for any task.\n【Intel Iris Xe graphics】Experience vibrant visuals and smooth performance with integrated Intel Iris Xe graphics, perfect for creative workflows and casual gaming.\n【Abundant memory and storage】Enjoy seamless multitasking with 16GB of LPDDR5x RAM, paired with a 512GB PCIe NVMe SSD that ensures rapid load times and efficient storage for your files.\n【Micro-edge display】Get clear, vivid visuals on a 14-inch WUXGA IPS display, boasting 300 nits brightness to ensure comfortable viewing under any lighting conditions.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/71d9Sw12krL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71jTYQjuzcL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81moGgrPpbL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81YCgz1BV5L._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81eNqRdwXeL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81+s5jzozgL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61AuimRcWrL._SL1500_.jpg"
+      ]
+    },
+    {
+      "name": "LG 108 cm (43 inches) 4K Ultra HD Smart LED TV 43UR7500PSC (Dark Iron Gray)",
+      "category": "Electronics",
+      "price": "28990",
+      "stockQuantity": "4",
+      "description": "Resolution: 4K Ultra HD (3840x2160) | Refresh Rate: 60 hertz\nConnectivity: Wi-Fi (Built-in) | 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices | ALLM | eARC | Bluetooth 5.0 | Optical | Ethernet\nSound: 20 Watts Output | 2.0 Ch Speaker | AI Sound (Virtual Surround 5.1) for an Immersive Experience | AI Acoustic Tuning | Bluetooth Surround Ready\nSmart TV Features: WebOS Smart TV | AI ThinQ | Apple Airplay 2 & Homekit | Game Optimizer| Filmmaker Mode | α5 AI Processor 4K Gen6 | HDR 10 |1.5 GB RAM + 8 GB Storage | Unlimited OTT App Support: Netflix, Prime Video, Disney+ Hotstar, Apple TV, Jio Cinema, SonyLIV, Discovery+, Zee5, Voot, MxPlayer, Google Play Movies & TV, YuppTV, Youtube",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/71ydzmWXW0L._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61tDktEggtL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71rlzAFhoIL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81EH11F5tuL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51MsdweiCzL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71585RmnEjL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71585RmnEjL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61zPZ+W+FzL._SL1500_.jpg"
+      ],
+      "id": "e5a1"
+    },
+    {
+      "id": "2df9",
+      "name": " LG XBOOM XL5S | Portable Bluetooth Speaker | 200W | 12 Hours of Battery Life | Multi Color Ring Lighting | XBOOM App |IPX4 | Party Speaker",
+      "category": "Electronics",
+      "price": "22116",
+      "stockQuantity": "2",
+      "description": "Up to 12 Hour Battery Playback - Up to 12 hours of battery life keeps the party alive.\nIPX4 Water Resistant - Keep the party pumping without worry thanks to the IPX4 water resistant rating. It's resistant to splashed water which makes the XBOOM the perfect choice, no matter if you're poolside or hosting a party.\nLG XBOOM App (iOS/Android) - Control your speaker from your mobile device. Download the LG XBOOM App and manage audio connections, lighting effects, playlists, equalizer and more with just a few clicks.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/71QpXo83n2L._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81SOfYCwmKL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81dAdFkDOkL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71S8oZuO30L._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71Z7ZuHdkaL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81tTk-6iaBL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61bOORZQ8ZL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61bOORZQ8ZL._SL1500_.jpg"
+      ]
+    },
+    {
+      "id": "3a69",
+      "name": " WoodenStreet™ Calder King Size Sheesham Wood 3 Seater Sofa Cum Bed with Mattress, Storage and Side Pocket for Living Room Wooden Furniture Sofa Bed for Home...",
+      "category": "Electronics",
+      "price": "27399",
+      "stockQuantity": "2",
+      "description": "Product dimension: 182.9 L x 81.3 W x 81.3 H Centimeters, Color: Honey Finish\n✅Sofa bed for living room, bedroom is made of high-quality sheesham wood with an exotic finish. Simple, stylish design, functional and suitable for any room\n✅King size sofa bed features a spacious box storage for storing clothes, toys, manchester etc, To preserve, we advise you to simply use a dust remover.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/71sxWgX74DL._SX522_.jpg",
+        "https://m.media-amazon.com/images/I/61z5Gq1zlKL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51vonteYNCL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61xfHsJW2LL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71TmPk83gaL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51AzsitrQUL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51vonteYNCL._SL1500_.jpg"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1ace",
+      "firstName": "Rustam",
+      "lastName": "Ali",
+      "email": "rustam@in.com",
+      "password": "password"
+    },
+    {
+      "id": "1e1e",
+      "firstName": "Md",
+      "lastName": "Rehan",
+      "email": "rehan@in.com",
+      "password": "password"
+    },
+    {
+      "id": "8003",
+      "firstName": "Asim",
+      "lastName": "Md",
+      "email": "asim@in.com",
+      "password": "password"
+    }
+  ],
+  "cartItems": [
+    {
+      "id": "aa2c",
+      "name": "Allen Solly Men's Solid Regular Fit Polo",
+      "category": "Clothes",
+      "price": "609",
+      "stockQuantity": "4",
+      "description": "Allen Solly Mens T shirt\n\n",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/81RcNGzlIhL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/81B37q40bTL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/A15RmPu+MDL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/A15RmPu+MDL._SX569_.jpg",
+        "https://m.media-amazon.com/images/I/91dy790l-0L._SX569_.jpg"
+      ],
+      "productQuantity": 1,
+      "userId": "1ace"
+    },
+    {
+      "id": "bc04",
+      "name": "HP Pavilion Plus, 13th Gen Intel Core i5-1335U, 14-inch, WUXGA, 16GB LPDDR5x, 512GB SSD, Intel Iris Xe Graphics, 5MP IR Camera/w Privacy Shutter, Backlit KB (Win 11, Blue, 1.38 kg) ew0115TU",
+      "category": "Electronics`",
+      "price": "72020",
+      "stockQuantity": "2",
+      "description": "【10-core 13th Gen Intel Core i5-1335U】Unlock powerful performance with a 10-core processor with 12 threads and a 12MB L3 cache, delivering faster and smoother multitasking for any task.\n【Intel Iris Xe graphics】Experience vibrant visuals and smooth performance with integrated Intel Iris Xe graphics, perfect for creative workflows and casual gaming.\n【Abundant memory and storage】Enjoy seamless multitasking with 16GB of LPDDR5x RAM, paired with a 512GB PCIe NVMe SSD that ensures rapid load times and efficient storage for your files.\n【Micro-edge display】Get clear, vivid visuals on a 14-inch WUXGA IPS display, boasting 300 nits brightness to ensure comfortable viewing under any lighting conditions.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/I/71d9Sw12krL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71jTYQjuzcL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81moGgrPpbL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81YCgz1BV5L._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81eNqRdwXeL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81+s5jzozgL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61AuimRcWrL._SL1500_.jpg"
+      ],
+      "productQuantity": 1,
+      "userId": "1ace"
+    }
+  ]
+}

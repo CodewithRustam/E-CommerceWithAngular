@@ -1,0 +1,52 @@
+<div class="text-end me-3 mt-3">
+  <button type="button" class="btn-close border border-3 fs-5" aria-label="Close" (click)="closeModal()"></button>
+</div>
+
+<div class="modal-body ps-4 pe-4 pb-5">
+  <div class="title-text">
+    <div class="title" style="margin-left:80px">{{ isNewProduct ? 'Add Product' : 'Update Product' }}</div>
+  </div>
+  <div class="form-container">
+    <div class="form-inner">
+      <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="field">
+            <input id="name" formControlName="name" placeholder="Product Name" />
+          </div>
+          <div class="field">
+            <input id="category" formControlName="category" placeholder="Category" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <input id="price" type="text" formControlName="price" placeholder="Price" />
+          </div>
+          <div class="field">
+            <input id="stockQuantity" type="text" formControlName="stockQuantity" placeholder="Stock Quantity" />
+          </div>
+        </div>
+
+        <div class="field mt-3">
+          <textarea id="description" formControlName="description" placeholder="Description"></textarea>
+        </div>
+
+        <div class="field mt-3">
+          <label for="imageUrl">Image URLs:</label>
+          <div formArrayName="imageUrl">
+            <div *ngFor="let image of imageUrl.controls; let i = index">
+              <input [formControlName]="i" placeholder="Image URL" />
+              <button type="button" class="btn btn-danger w-25" (click)="removeImageUrl(i)">Remove</button>
+            </div>
+            <button class="btn btn-primary btn-sm" type="button" (click)="addImageUrl('')">Add Image URL</button>
+          </div>
+        </div>
+
+        <div class="btn">
+          <div class="btn-layer"></div>
+          <button class="">{{ isNewProduct ? 'Add Product' : 'Update Product' }}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

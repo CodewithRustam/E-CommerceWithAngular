@@ -1,0 +1,50 @@
+<div class="table-wrapper">
+  <div class="row">
+    <p class="col-3"></p>
+    <p class="table-title col-6">Product List</p>
+    <p class="text-end col-3 fs-5" style="cursor:pointer" (click)="openModalForAddProduct();handleClick($event)">
+      <img class="mb-2" src="https://cdn-icons-png.flaticon.com/512/10608/10608883.png" alt="addProductImg" height="50" /> Add Product
+    </p>
+  </div>
+  <p class="text-danger fs-5 fw-bold text-end">{{productMessage}}</p>
+  <table class="product-table">
+    <thead>
+      <tr>
+        <th width="500">Product Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Stock Quantity</th>
+        <th>Images</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productList" class="tabledata">
+        <td>{{ product.name }}</td>
+        <td>{{ product.category }}</td>
+        <td>{{ product.price | currency:'INR':'symbol' }}</td>
+        <td>{{ product.stockQuantity }}</td>
+        <td>
+          <div *ngIf="product.imageUrl.length > 0">
+            <a *ngFor="let image of product.imageUrl" [href]="image" target="_blank">
+              <img [src]="image" alt="ProductImage" style="background:none" height="70" width="70" />
+            </a>
+          </div>
+          <div *ngIf="product.imageUrl.length === 0">
+            No images available
+          </div>
+        </td>
+        <td>
+          <div class="d-flex mb-2">
+            <div>
+              <img style="cursor: pointer; filter: contrast(130%);" src="https://cdn-icons-png.flaticon.com/512/8915/8915501.png" height="50" width="40" (click)="deleteProduct(product.id);handleClick($event)" />
+            </div>
+            <div class="ms-2">
+              <img style="cursor: pointer; filter: contrast(130%);" (click)="openModalForUpdateProduct(product);handleClick($event)" src="https://cdn3d.iconscout.com/3d/premium/thumb/product-update-3d-icon-download-in-png-blend-fbx-gltf-file-formats--package-parcel-updated-management-pack-e-commerce-shopping-icons-5966488.png" height="50" width="42" alt="updateimg" />
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,88 @@
+<nav class="navbar fixed-top custom-navbar shadow-sm">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <!-- Brand and Logo -->
+    <div class="navbar-brand d-flex align-items-center">
+      <a href="#">
+        <img src="https://cdn-icons-png.freepik.com/512/7319/7319254.png" alt="Logo" height="40" class="brand-img" />
+      </a>
+      <a href="#" class="brand-title">E-Commerce</a>
+    </div>
+
+    <!-- Navbar Links Centered -->
+    <div class="navbar-links d-none d-lg-flex">
+      <a class="nav-item" routerLink="/">Home</a>
+      <a class="nav-item" routerLink="/seller-auth">Sell on Us</a>
+      <a class="nav-item" routerLink="/">Offers</a>
+      <a class="nav-item" routerLink="/">Contact Us</a>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar position-relative">
+      <input type="search" class="form-control" placeholder="Search products..." (keyup)="searchProduct($event)" #Searchproduct />
+      <button class="btn search-btn" (click)="onClickSearch(Searchproduct.value)">
+        <i class="bi bi-search text-white"></i>
+      </button>
+      <!-- Suggested Products -->
+      <ul class="suggested-list" #suggestedList *ngIf="filteredproducts">
+        <li *ngFor="let item of filteredproducts" class="suggested-item" (click)="selectProduct(item)">
+          {{ item.name }}
+        </li>
+        <li *ngIf="filteredproducts.length === 0">No products found.</li>
+      </ul>
+    </div>
+
+    <!-- Right-side Icons and User Options -->
+    <div class="d-flex align-items-center">
+      <a class="nav-item position-relative" routerLink="/shopping-cart" *ngIf="headerType!=='Seller'">
+        <i class="bi bi-cart3 fs-3 text-warning"></i>
+        <span class="cart-count badge bg-danger">{{ cartCount }}</span>
+      </a>
+
+      <ng-container [ngSwitch]="headerType">
+        <!-- Default Header -->
+        <ng-container *ngSwitchCase="'default'">
+          <a class="nav-item ms-3 fw-bold text-info text-decoration-none fs-5" routerLink="/user-auth">Login</a>
+        </ng-container>
+
+        <!-- User Header -->
+        <ng-container *ngSwitchCase="'User'">
+          <div class="dropdown ms-3">
+            <a href="#" class="dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="user-icon rounded-circle me-2" src="https://cdn-icons-png.flaticon.com/512/13077/13077484.png" height="30" />
+              <span class="fw-bold text-white">{{ userName }}</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-lg p-3" style="border-radius: 12px;">
+              <li class="mb-2">
+                <a class="dropdown-item d-flex align-items-center py-2" routerLink="/orders">
+                  <i class="bi bi-box-seam me-2"></i>
+                  Your Orders
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center py-2" (click)="UserLogout()">
+                  <i class="bi bi-box-arrow-right me-2"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ng-container>
+
+        <!---Seller Header-->
+        <ng-container *ngSwitchCase="'Seller'">
+          <div class="dropdown ms-3">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="user-icon" src="https://cdn-icons-png.flaticon.com/512/13077/13077484.png" height="30" />
+              {{ sellerName }}
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" (click)="Logout()">Logout</a></li>
+            </ul>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+
+  </div>
+</nav>

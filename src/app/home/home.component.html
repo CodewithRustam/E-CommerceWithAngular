@@ -1,0 +1,29 @@
+<ngb-carousel #carousel
+              (slide)="onSlide($event)">
+  @for (img of images; track img; let i = $index) {
+  <ng-template ngbSlide>  
+      <div >
+        <img class="product-image" [src]="img" alt="My image {{ i + 1 }} description" />
+      </div>
+  </ng-template>
+  }
+</ngb-carousel>
+<div style="height:1450px">
+  <div class="my-product-div ms-5 me-5">
+    <div class="container-fluid">
+      <div class="product-grid">
+        <div class="glass-card" *ngFor="let product of products">
+          <img [src]="product.imageUrl[0]" alt="{{ product.name }}" class="card-img" routerLink="/productdetails/{{product.id}}">
+          <div class="card-body border-top">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <div class="d-flex justify-content-around">
+              <div class="card-price">{{ product.price | currency:'INR':'symbol'  }}</div>
+              <div style="cursor: pointer; font-size:xx-large;"><i class="fa-solid fa-heart" style="color: #f54105;"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

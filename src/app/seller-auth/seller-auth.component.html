@@ -1,0 +1,59 @@
+<div class="d-flex justify-content-center mb-3"  style="margin-top: 105px">
+  <div class="wrapper">
+    
+    <div class="title-text">
+      <div class="title login" [ngStyle]="{ 'margin-left': isLogin ? '0%' : '-50%' }">Seller Sign In</div>
+      <div class="title signup">Seller Sign Up</div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" [checked]="isLogin" (change)="toggleForm()">
+        <input type="radio" name="slide" id="signup" [checked]="!isLogin" (change)="toggleForm()">
+        <label for="login" class="slide login" (click)="toggleForm()">Login</label>
+        <label for="signup" class="slide signup" (click)="toggleForm()">Signup</label>
+        <div class="slider-tab" [ngStyle]="getSliderTabStyle()"></div>
+      </div>
+      <p class="text-center text-danger" *ngIf="isLogin">{{loginErrorMessage}}</p>
+      <div class="form-inner">
+        <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()" *ngIf="isLogin" class="login">
+          <div class="field">
+            <input type="email" formControlName="email" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" formControlName="password" placeholder="Password" required>
+          </div>
+          <div class="pass-link"><a href="#">Forgot password?</a></div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">Not a member? <a (click)="toggleForm()">Signup now</a></div>
+        </form>
+        <form [formGroup]="sellerSignUpForm" (ngSubmit)="onSignUpSubmit()" *ngIf="!isLogin" class="signup">
+          <div class="name-fields-container">
+            <div class="field">
+              <input type="text" formControlName="firstName" placeholder="First Name" required>
+            </div>
+            <div class="field">
+              <input type="text" formControlName="lastName" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="field">
+            <input type="email" formControlName="email" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" formControlName="password" placeholder="Password" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Confirm Password" required>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="Signup">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+<div class="bg-color" style="margin-top:100px">
+  <div class="text-success h5 text-end">{{cartAddMessage}}</div>
+  <div class="container-fluid">
+    <div class="product-grid">
+      <div class="glass-card" *ngFor="let product of filteredproducts">
+        <img [src]="product.imageUrl[0]" alt="{{ product.name }}" class="card-img" routerLink="/productdetails/{{product.id}}">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <div class="d-flex justify-content-around">
+            <div class="card-price">{{ product.price | currency:'INR':'symbol'  }}</div>
+            <button  class="btn btn-outline-warning">Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
